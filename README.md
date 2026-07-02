@@ -1,6 +1,6 @@
 # Diabetes Glucose Regression Using Machine Learning Regressors
 
-**Machine Learning - First Mini Project**
+**Machine Learning 
 
 ## Abstract
 
