@@ -95,3 +95,34 @@ The overall R2 values are moderate, which means glucose prediction remains
 challenging using only the available features. Future work may include
 hyperparameter tuning, cross-validation, additional feature engineering, and
 more careful comparison of imputation strategies.
+# Final Results
+
+These results were copied from the original submitted notebook outputs.
+
+| Model | MSE | R2 |
+|---|---:|---:|
+| Linear Regression | 551.3952 | 0.4521 |
+| Ridge Regression | 551.4030 | 0.4521 |
+| Lasso Regression | 551.6126 | 0.4518 |
+| Polynomial Regression | 537.3451 | 0.4660 |
+| KNN Regression | **516.3685** | **0.4869** |
+| SVR | 535.1923 | 0.4682 |
+| Decision Tree Regression | 532.4813 | 0.4709 |
+| Random Forest Regression | 556.1475 | 0.4473 |
+| Bayesian Ridge Regression | 547.9070 | 0.4555 |
+
+## Summary
+
+The best recorded model was KNN Regression:
+
+- MSE: `516.3685`
+- R2: `0.4869`
+
+Decision Tree Regression and SVR were the next strongest models by R2 score in
+the recorded run.
+
+## Important Note
+
+The R2 scores are moderate, so the models explain only part of the variation in
+glucose values. Further tuning, additional features, or alternative
+preprocessing strategies may improve performance.
